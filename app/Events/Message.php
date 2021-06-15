@@ -20,7 +20,10 @@ class Message implements ShouldBroadcast
      * @return void
      */
 
-    public function __construct(public string $username, public string $message)
+    public $username;
+    public $message;
+
+    public function __construct($username, $message)
     {
 
     }
